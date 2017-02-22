@@ -1,3 +1,1 @@
-# scala
-
-Some exercises of the Functional Programming in Scala Book
+# Some Scala exercises of the book: Functional Programming in Scala
