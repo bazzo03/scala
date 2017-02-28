@@ -1,5 +1,6 @@
 package week1
 
+import cats.Functor
 import cats.implicits._
 import cats.kernel.{Monoid, Semigroup}
 
@@ -19,6 +20,11 @@ object Main extends App {
 
     print (Monoid[Map[String, Int]].combineAll(List(Map("a" → 1, "b" → 2), Map("a" → 3))))
     print (Monoid[Map[String, Int]].combineAll(List()))*/
+
+    val source = List("Cats", "is", "awesome")
+    val product = Functor[List].fproduct(source)(_.length).toMap
+
+    print (product.get("Cats").getOrElse(0))
 
   }
 

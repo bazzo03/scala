@@ -19,3 +19,11 @@ def simulateMachine(oldMachine : Machine, inputs: List[Input]): Machine = {
 }
 
 operate()
+
+
+
+val list = List("a", "z", "z", "a")
+isPalindrome(list)
+def isPalindrome(list: List[String]) : Boolean = {
+  list == list.reverse
+}
